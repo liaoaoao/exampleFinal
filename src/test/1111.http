@@ -1,0 +1,71 @@
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "id": 102,
+  "username": "wang",
+  "password": "111111",
+  "power": "user"
+}
+
+###
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "username": "wang",
+  "password": "11154144"
+}
+
+###
+POST http://localhost:8080/api/Admin/Adjust
+Content-Type: application/json
+
+{
+  "id": 101
+}
+
+
+###
+POST http://localhost:8080/api/Admin/Update1
+Content-Type: application/json
+
+{
+  "id":102,
+  "detail": "mamhuhu"
+}
+
+
+###
+POST http://localhost:8080/api/Admin/UpdateUserPower
+Content-Type: application/json
+
+{
+  "id":102,
+  "power": "user"
+}
+
+
+###
+POST http://localhost:8080/api/Admin/createMission
+Content-Type: application/json
+
+{
+  "id":1,
+  "endTime": "2019-6-15 10:20:10",
+  "missionDetail": "asdasd",
+  "name": "saodi"
+}
+
+
+###
+
+
+
+###
+#### For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
