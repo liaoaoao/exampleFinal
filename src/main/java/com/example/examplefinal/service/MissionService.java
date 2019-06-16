@@ -36,13 +36,18 @@ public class MissionService {
     //写回复并提交数据，判断是否超时
     public void getEndTime(MissionTeacher missionTeacher1,LocalDateTime localDateTime1){
         //MissionTeacher missionTeacher = missonTeacherRepository.findMissionTeacher(teacher, mission);
-        Teacher t = teacherRepository.findByName(missionTeacher1.getTeacher().getName());
-        Mission m = missionRepository.findByName(missionTeacher1.getMission().getName());
-        LocalDateTime localDateTime =m .getEndTime();
-        int i =  missonTeacherRepository.writeMessage(missionTeacher1.getMessage(),t,m);
-        if(i==0){
-            log.debug("老师或者任务不存在，无法回复");
-        }
+
+            Teacher t = teacherRepository.findByName(missionTeacher1.getTeacher().getName());
+            Mission m = missionRepository.findByName(missionTeacher1.getMission().getName());
+            if(t!=null&&m!=null) {
+                int i = missonTeacherRepository.writeMessage(missionTeacher1.getMessage(), t, m);
+            }else {
+                log.debug("用户或者消息不存在");
+            }
+
+
+        //LocalDateTime localDateTime =m .getEndTime();
+
         //if(localDateTime.isAfter(localDateTime1)){
             //missionTeacher.setResult("InTime");
             //missonTeacherRepository.save(missionTeacher);

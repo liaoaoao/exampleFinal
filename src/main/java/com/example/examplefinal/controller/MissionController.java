@@ -67,6 +67,10 @@ public class MissionController {
     //写回复并判断是否超时
     @PostMapping("/User/writeMessage")
     public void writeMessage(@RequestBody MissionTeacher missionTeacher){
-        missionService.getEndTime(missionTeacher,  null);
+        missionService.getEndTime(missionTeacher,null);
+    }
+    @PostMapping("/User/seeMission")
+    public void seeMission(@RequestBody Mission mission){
+        missionService.getTeacherByMission(mission.getName());
     }
 }

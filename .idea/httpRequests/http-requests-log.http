@@ -1,0 +1,669 @@
+POST http://localhost:8080/api/User/seeMission
+Content-Type: application/json
+
+{
+  "name": "niubi"
+
+
+}
+
+###
+
+POST http://localhost:8080/api/User/seeMission
+Content-Type: application/json
+
+{
+  "name": "niubi"
+
+
+}
+
+<> 2019-06-16T043709.404.json
+
+###
+
+POST http://localhost:8080/api/Admin/createMissionTeacher
+Content-Type: application/json
+
+{
+  "mission": {
+    "name": "niubi"
+  },
+  "teacher": {
+    "name": "wangbaoqiang"
+  }
+}
+
+###
+
+POST http://localhost:8080/api/Admin/AddTeacher
+Content-Type: application/json
+
+{
+  "name": "wangbaoqiang",
+  "user":{
+  "id": 102
+}
+
+}
+
+###
+
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "id": 102,
+  "username": "wangbaoqiang",
+  "password": "111111",
+  "power": "user"
+}
+
+<> 2019-06-16T043313.200.json
+
+###
+
+POST http://localhost:8080/api/User/writeMessage
+Content-Type: application/json
+
+{
+  "teacher": {
+    "name":"wang"
+  },
+  "mission": {
+    "name": "niubi"
+  },
+  "message": "wozuowanle"
+}
+
+###
+
+POST http://localhost:8080/api/User/getMission
+Content-Type: application/json
+
+{
+  "name": "guo"
+
+
+}
+
+###
+
+POST http://localhost:8080/api/User/writeMessage
+Content-Type: application/json
+
+{
+  "teacher": {
+    "name":"guo"
+  },
+  "mission": {
+    "name": "niubi"
+  },
+  "message": "wozuowanle"
+}
+
+###
+
+POST http://localhost:8080/api/User/writeMessage
+Content-Type: application/json
+
+{
+  "Teacher": {
+    "name":"guo"
+  },
+  "Mission": {
+    "name": "niubi"
+  },
+  "message": "wozuowanle"
+
+
+}
+
+<> 2019-06-16T042549.500.json
+
+###
+
+POST http://localhost:8080/api/User/writeMessage
+Content-Type: application/json
+
+{
+  "Teacher": {
+    "name":"guo"
+  },
+  "Mission": {
+    "name": "niubi"
+  },
+  "message": "wozuowanle"
+
+
+}
+
+###
+
+POST http://localhost:8080/api/User/writeMessage
+Content-Type: application/json
+
+{
+  "Teacher": {
+    "name":"guo"
+  },
+  "Mission": {
+    "name": "niubi"
+  },
+  "message": "wozuowanle"
+
+
+}
+
+<> 2019-06-16T042208.500.json
+
+###
+
+POST http://localhost:8080/api/User/writeMessage
+Content-Type: application/json
+
+{
+  "Teacher": {
+    "name":"guo"
+  },
+  "Mission": {
+    "name": "niubi"
+  },
+  "message": "wozuowanle"
+
+
+}
+
+<> 2019-06-16T041553.500.json
+
+###
+
+POST http://localhost:8080/api/User/writeMessage
+Content-Type: application/json
+
+{
+  "Teacher": {
+    "name":"guo"
+  },
+  "Mission": {
+    "name": "niubi"
+  },
+  "message": "wozuowanle"
+
+
+}
+
+###
+
+POST http://localhost:8080/api/User/writeMessage
+Content-Type: application/json
+
+{
+  "Teacher": {
+    "id": 1
+  },
+  "Mission": {
+    "id": 3
+  },
+  "message": "wozuowanle"
+
+
+}
+
+<> 2019-06-16T034303.500.json
+
+###
+
+POST http://localhost:8080/api/Admin/createMissionTeacher
+Content-Type: application/json
+
+{
+  "mission": {
+    "name": "liaoaoaadasd"
+  },
+  "teacher": {
+    "name": "guoa"
+  }
+}
+
+###
+
+POST http://localhost:8080/api/Admin/createMissionTeacher
+Content-Type: application/json
+
+{
+  "mission": {
+    "name": "liaoaoa"
+  },
+  "teacher": {
+    "name": "guoaa"
+  }
+}
+
+###
+
+POST http://localhost:8080/api/Admin/createMissionTeacher
+Content-Type: application/json
+
+{
+  "mission": {
+    "name": "liaoaoa"
+  },
+  "teacher": {
+    "name": "guoaa"
+  }
+}
+
+###
+
+POST http://localhost:8080/api/User/getMission
+Content-Type: application/json
+
+{
+  "name": "guo"
+
+
+}
+
+###
+
+POST http://localhost:8080/api/Admin/createMissionTeacher
+Content-Type: application/json
+
+{
+  "mission": {
+    "name": "liaoaoa"
+  },
+  "teacher": {
+    "name": "guo"
+  }
+}
+
+###
+
+POST http://localhost:8080/api/Admin/createMissionTeacher
+Content-Type: application/json
+
+{
+  "mission": {
+    "name": "liaoao"
+  },
+  "teacher": {
+    "name": "guo"
+  }
+}
+
+###
+
+POST http://localhost:8080/api/Admin/createMissionTeacher
+Content-Type: application/json
+
+{
+  "mission": {
+    "name": "niubi"
+  },
+  "teacher": {
+    "name": "guo"
+  }
+}
+
+###
+
+POST http://localhost:8080/api/Admin/createMission
+Content-Type: application/json
+
+{
+  "name": "niubi",
+  "missionDetail": "caonima",
+  "missionState": "open"
+}
+
+###
+
+POST http://localhost:8080/api/Admin/AddTeacher
+Content-Type: application/json
+
+{
+  "name": "guo",
+  "user":{
+  "id": 103
+}
+
+}
+
+###
+
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "id": 103,
+  "username": "zhang",
+  "password": "111111",
+  "power": "user"
+}
+
+<> 2019-06-16T024841.200.json
+
+###
+
+POST http://localhost:8080/api/Admin/createMission
+Content-Type: application/json
+
+{
+  "name": "liaoaoa",
+  "missionDetail": "saodi"
+}
+
+###
+
+POST http://localhost:8080/api/Admin/createMission
+Content-Type: application/json
+
+{
+  "name": "aoaoao",
+  "missionDetail": "saodi"
+}
+
+###
+
+POST http://localhost:8080/api/Admin/createMissionTeacher
+Content-Type: application/json
+
+{
+  "mission": {
+    "name": "niubi"
+  },
+  "teacher": {
+    "name": "guo"
+  }
+}
+
+<> 2019-06-16T024101.500.json
+
+###
+
+POST http://localhost:8080/api/Admin/createMissionTeacher
+Content-Type: application/json
+
+{
+  "mission": {
+    "name": "niubi"
+  },
+  "teacher": {
+    "name": "guo"
+  }
+}
+
+<> 2019-06-16T023535.500.json
+
+###
+
+POST http://localhost:8080/api/User/getMission
+Content-Type: application/json
+
+{
+  "name": "guo"
+
+
+}
+
+###
+
+POST http://localhost:8080/api/User/getMission
+Content-Type: application/json
+
+{
+  "name": "guo"
+
+
+}
+
+###
+
+POST http://localhost:8080/api/Admin/createMission
+Content-Type: application/json
+
+{
+  "name": "caonima",
+  "missionDetail": "saodi",
+  "missionState": "open"
+}
+
+###
+
+POST http://localhost:8080/api/Admin/createMission
+Content-Type: application/json
+
+{
+  "name": "niubi",
+  "missionDetail": "saodi",
+  "missionState": "open"
+}
+
+###
+
+POST http://localhost:8080/api/Admin/createMissionTeacher
+Content-Type: application/json
+
+{
+  "mission": {
+    "name": "aoaoao"
+  },
+  "teacher": {
+    "name": "guo"
+  }
+}
+
+###
+
+POST http://localhost:8080/api/Admin/createMissionTeacher
+Content-Type: application/json
+
+{
+  "mission": {
+    "name": "aoaoao"
+  },
+  "teacher": {
+    "name": "guo"
+  }
+}
+
+<> 2019-06-16T021945.500.json
+
+###
+
+POST http://localhost:8080/api/Admin/createMissionTeacher
+Content-Type: application/json
+
+{
+  "mission": {
+    "id": 1
+  },
+  "teacher": {
+    "id": 1
+  }
+}
+
+###
+
+POST http://localhost:8080/api/Admin/createMissionTeacher
+Content-Type: application/json
+
+{
+  "mission": {
+    "id": 1
+  },
+  "teacher": {
+    "id": 1
+  }
+}
+
+<> 2019-06-16T021408.500.json
+
+###
+
+POST http://localhost:8080/api/Admin/createMissionTeacher
+Content-Type: application/json
+
+{
+  "mission": {
+    "id": 1
+  },
+  "teacher": {
+    "id": 1
+  }
+}
+
+<> 2019-06-16T021332.500.json
+
+###
+
+POST http://localhost:8080/api/Admin/createMissionTeacher
+Content-Type: application/json
+
+{
+  "id": 1,
+  "mission": {
+    "id": 1
+  },
+  "teacher": {
+    "id": 1
+  }
+}
+
+<> 2019-06-16T021323.500.json
+
+###
+
+POST http://localhost:8080/api/Admin/createMissionTeacher
+Content-Type: application/json
+
+{
+  "mission": {
+    "id": 1
+  },
+  "teacher": {
+    "id": 1
+  }
+}
+
+###
+
+POST http://localhost:8080/api/Admin/updateMission
+Content-Type: application/json
+
+{
+  "name": "niubi",
+  "missionDetail": "huijiachifan"
+
+}
+
+###
+
+POST http://localhost:8080/api/Admin/createMission
+Content-Type: application/json
+
+{
+  "name": "niubi",
+  "missionDetail": "saodi",
+  "missionState": "open"
+}
+
+###
+
+POST http://localhost:8080/api/Admin/closeMission
+Content-Type: application/json
+
+{
+  "name": "aoaossss"
+
+}
+
+###
+
+POST http://localhost:8080/api/Admin/updateMission
+Content-Type: application/json
+
+{
+  "name": "aoaoao",
+  "missionDetail": "huijiachifan"
+
+}
+
+###
+
+POST http://localhost:8080/api/Admin/closeMission
+Content-Type: application/json
+
+{
+  "name": "aoaossss"
+
+}
+
+###
+
+POST http://localhost:8080/api/Admin/closeMission
+Content-Type: application/json
+
+{
+  "name": "aoaossss"
+
+}
+
+###
+
+POST http://localhost:8080/api/Admin/closeMission
+Content-Type: application/json
+
+{
+  "name": "aoaoao"
+
+}
+
+###
+
+POST http://localhost:8080/api/Admin/createMission
+Content-Type: application/json
+
+{
+  "name": "aoaoao",
+  "missionDetail": "saodi",
+  "missionState": "open"
+}
+
+###
+
+POST http://localhost:8080/api/Admin/createMission
+Content-Type: application/json
+
+{
+  "name": "aoaoao",
+  "missionDetail": "saodi"
+}
+
+###
+
+POST http://localhost:8080/api/User/getMission
+Content-Type: application/json
+
+{
+  "name": "aoaoao",
+  "missionDetail": "saodi"
+}
+
+###
+
+POST http://localhost:8080/api/Admin/AddTeacher
+Content-Type: application/json
+
+{
+  "name": "guo",
+  "user":{
+  "id": 103
+}
+
+}
+
+###
+
