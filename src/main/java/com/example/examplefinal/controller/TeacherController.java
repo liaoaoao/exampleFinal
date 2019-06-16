@@ -12,8 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.persistence.EntityManager;
 import javax.servlet.http.HttpServletRequest;
 import javax.transaction.Transactional;
+import java.util.Optional;
 
 @Slf4j
 @RestController
@@ -25,6 +27,13 @@ public class TeacherController {
     private UserRepository userRepository;
     @Autowired
     private TeacherRepository teacherRepository;
+    @Autowired
+    EntityManager em;
+    //增加老师
+    @PostMapping("/Admin/AddTeacher")
+    public void getIndex2(@RequestBody Teacher teacher ){
+        teacherRepository.save(teacher);
+    }
 
     @PostMapping("/Admin/Adjust")
     public void adjustUser(@RequestBody User user, HttpServletRequest request){

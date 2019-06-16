@@ -25,29 +25,48 @@ public class MissionController {
     @Autowired
     private MissionService missionService;
 
+    //创建任务
     @PostMapping("/Admin/createMission")
     public void createMission(@RequestBody Mission mission){
 
     adminService.createMission(mission);
     }
+    //关闭任务
     @PostMapping("/Admin/closeMission")
     public void closeMission(@RequestBody Mission mission){
         adminService.closeMission(mission.getName());
     }
+    //修改任务
     @PostMapping("/Admin/updateMission")
     public void updateMission(@RequestBody Mission mission){
-        adminService.updateMission(mission.getName());
+        adminService.updateMission(mission.getMissionDetail(),mission.getName());
     }
     //要求教师在指定截止时间内回复信息
     @PostMapping("/Admin/createMissionTeacher")
-    public void deleteMission(@RequestBody Teacher teacher, @RequestBody Mission mission){
-        adminService.createMissionTeacher(teacher.getName(), mission.getName());
+    public void deleteMission(@RequestBody MissionTeacher missionTeacher){
+        adminService.createMissionTeacher(missionTeacher.getTeacher().getName(), missionTeacher.getMission().getName());
     }
     //检查老师是否按时回复
     @PostMapping("/check")
-    public void check(@RequestBody MissionTeacher missionTeacher,@RequestBody Teacher teacher,@RequestBody Mission mission){
+    public void check(@RequestBody MissionTeacher missionTeacher){
         LocalDateTime localDateTime = missionService.getLocalTime();
-        missionService.getEndTime(missionTeacher, teacher, mission, localDateTime);
+        missionService.getEndTime(missionTeacher,localDateTime);
+    }
+    //获取某个老师的全部任务
+    @PostMapping("/User/getMission")
+    public  void getMission(@RequestBody Teacher teacher){
+        missionService.getMissionByTeacher(teacher.getName());
     }
 
+    //获取某个任务的全部老师回复
+    @PostMapping("/User/getTeacher")
+    public  void getTeacher(@RequestBody Mission mission){
+        missionService.getMissionByTeacher(mission.getName());
+    }
+
+    //写回复并判断是否超时
+    @PostMapping("/User/writeMessage")
+    public void writeMessage(@RequestBody MissionTeacher missionTeacher){
+        missionService.getEndTime(missionTeacher,  null);
+    }
 }

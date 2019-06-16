@@ -22,7 +22,7 @@ public interface MissionRepository extends JpaRepository<Mission,Integer> {
     //管理员修改任务
     @Modifying
     @Query("UPDATE Mission t SET t.missionDetail = :missionDetail where t.missionState ='open'and t.name = :name")
-    Integer updateMission(@Param("name")String name);
+    Integer updateMission(@Param("missionDetail") String missionDetail,@Param("name")String name);
 
     //管理员关闭任务
     @Modifying

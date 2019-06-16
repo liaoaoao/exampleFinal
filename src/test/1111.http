@@ -2,8 +2,8 @@ POST http://localhost:8080/api/register
 Content-Type: application/json
 
 {
-  "id": 102,
-  "username": "wang",
+  "id": 103,
+  "username": "zhang",
   "password": "111111",
   "power": "user"
 }
@@ -47,18 +47,103 @@ Content-Type: application/json
 
 
 ###
-POST http://localhost:8080/api/Admin/createMission
+POST http://localhost:8080/api/Admin/AddTeacher
 Content-Type: application/json
 
 {
-  "id":1,
-  "endTime": "2019-6-15 10:20:10",
-  "missionDetail": "asdasd",
-  "name": "saodi"
+  "name": "guo",
+  "user":{
+  "id": 103
+}
+
 }
 
 
 ###
+POST http://localhost:8080/api/Admin/createMission
+Content-Type: application/json
+
+{
+  "name": "liaoaoa",
+  "missionDetail": "saodi"
+}
+
+
+###
+POST http://localhost:8080/api/Admin/createMission
+Content-Type: application/json
+
+{
+  "name": "niubi",
+  "missionDetail": "caonima",
+  "missionState": "open"
+}
+
+
+###
+POST http://localhost:8080/api/Admin/closeMission
+Content-Type: application/json
+
+{
+  "name": "aoaossss"
+
+}
+
+
+###
+POST http://localhost:8080/api/Admin/updateMission
+Content-Type: application/json
+
+{
+  "name": "niubi",
+  "missionDetail": "huijiachifan"
+
+}
+
+
+
+###
+POST http://localhost:8080/api/Admin/createMissionTeacher
+Content-Type: application/json
+
+{
+  "mission": {
+    "name": "liaoaoaadasd"
+  },
+  "teacher": {
+    "name": "guoa"
+  }
+}
+
+
+
+###
+POST http://localhost:8080/api/User/getMission
+Content-Type: application/json
+
+{
+  "name": "guo"
+
+
+}
+
+
+
+###
+POST http://localhost:8080/api/User/writeMessage
+Content-Type: application/json
+
+{
+  "Teacher": {
+    "name":"guo"
+  },
+  "Mission": {
+    "name": "niubi"
+  },
+  "message": "wozuowanle"
+
+
+}
 
 
 

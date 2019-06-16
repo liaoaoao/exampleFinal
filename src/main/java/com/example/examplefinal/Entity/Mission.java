@@ -22,7 +22,7 @@ public class Mission {
     //任务描述
     private String missionDetail;
     //截止时间
-    @JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy/MM/dd HH:mm:ss")
+    @JsonFormat(locale="zh",timezone = "GMT+8",pattern="yyyy-MM-dd HH:mm")
     private LocalDateTime endTime;
     //任务状态
     private String missionState;

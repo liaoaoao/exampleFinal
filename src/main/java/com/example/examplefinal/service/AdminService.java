@@ -25,24 +25,44 @@ public class AdminService {
     private TeacherRepository teacherRepository;
 
     public void createMission(Mission mission){
-        missionRepository.save(mission);
+        Mission m = missionRepository.findByName(mission.getName());
+        if(m ==null) {
+            missionRepository.save(mission);
+        }else {
+            log.debug("任务名已存在");
+        }
     }
 
-    public int updateMission(String name){
-        return missionRepository.updateMission(name);
+    public int updateMission(String detail,String name){
+        if (missionRepository.updateMission(detail,name)!=0) {
+            return missionRepository.updateMission(detail,name);
+        }else {
+            log.debug("任务不存在");
+        }
+        return -1;
     }
 
     public int closeMission(String name){
-        return missionRepository.closeMission(name);
+        if(missionRepository.closeMission(name)!=0) {
+            return missionRepository.closeMission(name);
+        }else {
+            log.debug("任务不存在");
+        }
+        return -1;
     }
 
     public void createMissionTeacher(String teachername,String missionname){
+
         Teacher t = teacherRepository.findByName(teachername);
         Mission m = missionRepository.findByName(missionname);
         MissionTeacher missionTeacher = new MissionTeacher();
-        missionTeacher.setTeacher(t);
-        missionTeacher.setMission(m);
-        missonTeacherRepository.save(missionTeacher);
+        if(t!=null&&m!=null) {
+            missionTeacher.setTeacher(t);
+            missionTeacher.setMission(m);
+            missonTeacherRepository.save(missionTeacher);
+        }else {
+            log.debug("任务或教师不存在");
+        }
     }
 
 }

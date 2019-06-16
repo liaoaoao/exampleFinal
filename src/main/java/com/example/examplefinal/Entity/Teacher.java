@@ -30,6 +30,6 @@ public class Teacher {
     @OneToMany(mappedBy = "teacher")
     private List<MissionTeacher> missionTeachers;
     @OneToOne
-    @MapsId
+    @JoinColumn(unique = true)
     private User user;
 }
